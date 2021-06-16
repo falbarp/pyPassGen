@@ -16,4 +16,4 @@ if __name__ == "__main__":
     s.extend(list(s4))
 
     print ("Your password: ", end="")
-    print ("".join(random.sample(s,pass_len)))
+    print ("".join([random.choice(s) for _ in range(pass_len)]))
