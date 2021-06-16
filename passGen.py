@@ -8,7 +8,9 @@ if __name__ == "__main__":
     s4=string.punctuation
 
     pass_len=int(input("Enter password length: "))
-
+    while pass_len<8:
+        print("Password must be at least 8 characters long")
+        pass_len=int(input("Enter password length: "))
     s = []
     s.extend(list(s1))
     s.extend(list(s2))
